@@ -1,0 +1,14 @@
+global:
+  smtp_smarthost: 'mail.opvk.tech:587'
+  smtp_from: 'allerts@opvk.tech'
+  smtp_auth_username: 'allerts@opvk.tech'
+  smtp_auth_password: 'nMArdE,89,&'  
+
+route:
+  receiver: 'email-notifications'
+
+receivers:
+  - name: 'email-notifications'
+    email_configs:
+      - to: 'allerts@opvk.tech'
+
